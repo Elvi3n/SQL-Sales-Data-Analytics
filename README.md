@@ -28,28 +28,13 @@ The dataset consisted of three tables, including information of products, sales,
 
 <img width="1123" height="433" alt="image" src="https://github.com/user-attachments/assets/330b60e7-366f-4445-a86b-3da844a4439d" />
 
-## Repository Structure
-
-```
-SQL-Sales-Data-Analytics/
-├── datasets/            
-├── scripts/            
-├── results/
-├── LICENSE
-└── README.md            
-```
-
 ## Example Analyses
 
-- Monthly Sales Performance → Track revenue growth trends by month.
+### 1) Product Segmentation by Cost Range
 
-- Cumulative Sales → Running total of sales by year.
+The following query creates product cost segments and analyzes how many products fall into each pricing bracket.
+This helps the business understand product distribution across different cost tiers and supports pricing strategy.
 
-- Customer Segmentation → Identify top customers by revenue contribution.
-
-- Product Performance → Rank products by sales volume and revenue.
-
-*Product Segment Analysis*
 ```
 WITH product_segments AS 
 (
@@ -76,6 +61,17 @@ GROUP BY cost_range
 ORDER BY product_count DESC;
 ```
 <img width="198" height="110" alt="image" src="https://github.com/user-attachments/assets/7d40b23d-e00c-4e6d-94bf-133c3eb23ead" />
+
+## Repository Structure
+
+```
+SQL-Sales-Data-Analytics/
+├── datasets/            
+├── scripts/            
+├── results/
+├── LICENSE
+└── README.md            
+```
 
 ## License
 

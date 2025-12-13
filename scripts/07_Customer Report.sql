@@ -1,4 +1,4 @@
-USE DataWarehouseAnalytics;
+USE DataWarehouse;
 GO
 
 /*
@@ -107,3 +107,4 @@ SELECT
 		 ELSE total_sales / lifespan
 	END AS avg_monthly_spend
 FROM customer_aggregation;
+

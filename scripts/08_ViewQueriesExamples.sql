@@ -1,4 +1,4 @@
-USE DataWarehouseAnalytics;
+USE DataWarehouse;
 GO
 
 SELECT 
@@ -7,3 +7,4 @@ SELECT
 	SUM(total_sales) AS total_sales
 FROM gold.report_customers
 GROUP BY age_group
+
